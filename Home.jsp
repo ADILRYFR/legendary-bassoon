@@ -4,12 +4,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>the home page</title>
+<title>Insert title here</title>
 </head>
 <body>
 
-<h2>Welcome to MVC Application nvm</h2>
-<%@ include file = "Signin.jsp" %>
+<%
+String user = (String)session.getAttribute("user");
+out.println("Welcome to the Home Page ");%>
+<br>
+<%
+out.println("Mr./Ms."+user);
+%>
+
+
 
 </body>
 </html>
